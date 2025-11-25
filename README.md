@@ -1,62 +1,5 @@
 # ✈️ Boeing 737 Fleet Reliability Dashboard
 
-## 📌 Project Overview
-**Business Problem:** Airlines face costly delays due to "Unscheduled Maintenance." The goal of this project was to analyze **491 FAA Service Difficulty Reports (SDR)** to determine which sub-systems of the Landing Gear (ATA Chapter 32) drive the most downtime.
-
-**The Solution:** I engineered an end-to-end data pipeline to ingest raw unstructured text data from the FAA, normalize component names, and visualize reliability trends to drive preventative maintenance strategies.
-
----
-
-## 🔍 Key Findings
-* **Sensor Failures:** 57% of defects are functional/avionics issues (low repair cost, high disruption), specifically Proximity Sensors and Switches.
-* **Seasonality:** Brakes & Tires show a 40% failure spike in Summer months, correlating strongly with ambient temperature rise (Heat Soak).
-* **Operational Impact:** 96% of reported defects resulted in AOG (Aircraft on Ground) status, with only 4% eligible for deferral (MEL).
-* **Phase Analysis:** The highest volume of defects occurs during Climb, pointing to Retraction Actuator stress rather than Landing impact.
-
----
-
-## 🛠️ Technical Workflow
-
-### 1. Data Engineering (SQL)
-* **Ingestion:** Loaded raw FAA CSV data into a local MySQL database.
-* **Cleaning:** Handled data type inconsistencies (Text vs Int) and Null values in flight hours.
-* **Logic:** Created a schema to handle 1-to-Many relationships between aircraft tail numbers and failure events.
-
-### 2. Data Modeling (Power BI)
-* **Star Schema:** Built a data model connecting the Fact Table (Defects) to Dimension Tables (Date, Temperature).
-* **DAX Measures:**
-    * *3-Month Moving Average* to smooth volatility.
-    * *AOG Events* calculated based on non-deferred status.
-    * *Risk Index* calculated by weighting failure modes (Fire = 10, Leak = 5).
-
-### 3. Visualization
-* Designed a grid-layout dashboard mimicking internal aviation software tools.
-* Implemented **Drill-Through functionality** to audit specific aircraft defect logs.
-* Used **Tooltips** to reveal operational details (Deferral status) without cluttering the main view.
-
----
-
-## 📂 Project Structure
-
-```text
-├── 00_Raw_Data/
-│   └── FAA_SDR_Boeing737_ATA32_2024_2025.xlsx  # Source data
-├── 01_SQL_Scripts/
-│   └── data_cleaning.sql                       # Raw SQL queries
-├── 02_PowerBI/
-│   └── Fleet_Reliability_Dashboard.pbix        # Dashboard file
-├── 03_Case_Study_Report/
-│   └── Business_Logic_Report.pdf               # Comprehensive insights
-└── 04_Screenshots/                             # Images for README
-
-
-
-
-
-
-
-# ✈️ Boeing 737 Fleet Reliability Dashboard
-
 ![Dashboard Preview](04_Screenshots/dashboard_main.png)
 
 ## 📌 Project Overview
@@ -119,4 +62,64 @@
 
 ### 📬 Contact
 * **LinkedIn:** [Your LinkedIn Profile Link Here]
+* **Portfolio:** [Your Portfolio Website/Link Here]
+
+
+# ✈️ Boeing 737 Fleet Reliability Dashboard
+
+## 📌 Project Overview
+**Business Problem:** Airlines face costly delays due to "Unscheduled Maintenance." The goal of this project was to analyze **491 FAA Service Difficulty Reports (SDR)** to determine which sub-systems of the Landing Gear (ATA Chapter 32) drive the most downtime.
+
+**The Solution:** I engineered an end-to-end data pipeline to ingest raw unstructured text data from the FAA, normalize component names, and visualize reliability trends to drive preventative maintenance strategies.
+
+---
+
+## 🔍 Key Findings
+* **Sensor Failures:** 57% of defects are functional/avionics issues (low repair cost, high disruption), specifically Proximity Sensors and Switches.
+* **Seasonality:** Brakes & Tires show a 40% failure spike in Summer months, correlating strongly with ambient temperature rise (Heat Soak).
+* **Operational Impact:** 96% of reported defects resulted in AOG (Aircraft on Ground) status, with only 4% eligible for deferral (MEL).
+* **Phase Analysis:** The highest volume of defects occurs during Climb, pointing to Retraction Actuator stress rather than Landing impact.
+
+---
+
+## 🛠️ Technical Workflow
+
+### 1. Data Engineering (SQL)
+* **Ingestion:** Loaded raw FAA CSV data into a local MySQL database.
+* **Cleaning:** Handled data type inconsistencies (Text vs Int) and Null values in flight hours.
+* **Logic:** Created a schema to handle 1-to-Many relationships between aircraft tail numbers and failure events.
+
+### 2. Data Modeling (Power BI)
+* **Star Schema:** Built a data model connecting the Fact Table (Defects) to Dimension Tables (Date, Temperature).
+* **DAX Measures:**
+    * *3-Month Moving Average* to smooth volatility.
+    * *AOG Events* calculated based on non-deferred status.
+    * *Risk Index* calculated by weighting failure modes (Fire = 10, Leak = 5).
+
+### 3. Visualization
+* Designed a grid-layout dashboard mimicking internal aviation software tools.
+* Implemented **Drill-Through functionality** to audit specific aircraft defect logs.
+* Used **Tooltips** to reveal operational details (Deferral status) without cluttering the main view.
+
+---
+
+## 📂 Project Structure
+
+```text
+├── 00_Raw_Data/
+│   └── FAA_SDR_Boeing737_ATA32_2024_2025.xlsx  # Source data
+├── 01_SQL_Scripts/
+│   └── data_cleaning.sql                       # Raw SQL queries
+├── 02_PowerBI/
+│   └── Fleet_Reliability_Dashboard.pbix        # Dashboard file
+├── 03_Case_Study_Report/
+│   └── Business_Logic_Report.pdf               # Comprehensive insights
+└── 04_Screenshots/                             # Images for README
+
+
+
+
+
+
+
 * **Portfolio:** [Your Portfolio Website/Link Here]
