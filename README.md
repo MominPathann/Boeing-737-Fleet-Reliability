@@ -61,6 +61,6 @@
 ---
 
 ### 📬 Contact
-* **LinkedIn:** [Momin Khan](https://www.linkedin.com/in/mominpathann/)]
-* **Portfolio:** [Boeing 737 Fleet Reliability](https://github.com/MominPathann/Boeing-737-Fleet-Reliability)]
+* **LinkedIn:** [Momin Khan](https://www.linkedin.com/in/mominpathann/)
+* **Portfolio:** [Boeing 737 Fleet Reliability](https://github.com/MominPathann/Boeing-737-Fleet-Reliability)
 
