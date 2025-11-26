@@ -61,10 +61,6 @@
 ---
 
 ### 📬 Contact
-* **LinkedIn:** [Your LinkedIn Profile Link Here]
-* **Portfolio:** [Your Portfolio Website/Link Here]
+* **LinkedIn:** [Your LinkedIn Profile Link Here](https://www.linkedin.com/in/mominpathann/)]
+* **Portfolio:** [Your Portfolio Website/Link Here](https://github.com/MominPathann/Boeing-737-Fleet-Reliability)]
 
-
-
-
-* **Portfolio:** [Your Portfolio Website/Link Here]
