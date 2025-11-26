@@ -58,6 +58,9 @@
 ### Tooltip Interaction (Defect Deferral)
 ![Tooltip](04_Screenshots/tooltip_interaction.png)
 
+### Temperature Trend Analysis (Defect Deferral)
+![Temperature Trend](04_Screenshots/temperature_trend.png)
+
 ---
 
 ### 📬 Contact
