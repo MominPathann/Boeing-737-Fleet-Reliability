@@ -1,5 +1,7 @@
 # ✈️ Boeing 737 Fleet Reliability Dashboard
 
+[APP Link](https://app.powerbi.com/view?r=eyJrIjoiMTE5MTQ0OTktNThjOS00NTRiLWE2MmMtYjZmYzNkZjZiMDczIiwidCI6ImRjNDliNmQyLTM1ZDQtNDM2Yi04Mzg4LWY1MThkOGRjYzNiZCJ9))
+
 ![Dashboard Preview](04_Screenshots/dashboard_main.png)
 
 ## 📌 Project Overview
